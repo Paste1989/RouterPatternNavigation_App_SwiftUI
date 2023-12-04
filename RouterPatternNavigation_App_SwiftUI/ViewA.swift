@@ -15,6 +15,8 @@ struct ViewA: View {
             Button("Go to View **B**") {
                 router.navigateTo(.viewB("Got here from **View A**"))
             }
+            .padding()
+            
             Button("Go to View **C**") {
                 router.navigateTo(.viewC)
             }

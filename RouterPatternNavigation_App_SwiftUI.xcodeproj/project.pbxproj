@@ -21,6 +21,7 @@
 		B713577E2B1DD56800E39675 /* ViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713577D2B1DD56800E39675 /* ViewA.swift */; };
 		B71357802B1DD57500E39675 /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713577F2B1DD57500E39675 /* ViewB.swift */; };
 		B71357822B1DD57E00E39675 /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357812B1DD57E00E39675 /* ViewC.swift */; };
+		B71357852B1DDAF000E39675 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357842B1DDAF000E39675 /* TabbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B713577D2B1DD56800E39675 /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
 		B713577F2B1DD57500E39675 /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
 		B71357812B1DD57E00E39675 /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
+		B71357842B1DDAF000E39675 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,8 @@
 			children = (
 				B71357452B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUIApp.swift */,
 				B713577A2B1DD3F300E39675 /* RouterView */,
-				B71357472B1DD13A00E39675 /* ContentView.swift */,
+				B71357832B1DDADE00E39675 /* Tabbar */,
+				B71357862B1DDCC700E39675 /* Main */,
 				B713577D2B1DD56800E39675 /* ViewA.swift */,
 				B713577F2B1DD57500E39675 /* ViewB.swift */,
 				B71357812B1DD57E00E39675 /* ViewC.swift */,
@@ -162,6 +165,22 @@
 				B71357782B1DD3CB00E39675 /* RouterView.swift */,
 			);
 			path = RouterView;
+			sourceTree = "<group>";
+		};
+		B71357832B1DDADE00E39675 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				B71357842B1DDAF000E39675 /* TabbarView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		B71357862B1DDCC700E39675 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B71357472B1DD13A00E39675 /* ContentView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +321,7 @@
 				B71357792B1DD3CB00E39675 /* RouterView.swift in Sources */,
 				B71357462B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUIApp.swift in Sources */,
 				B713577C2B1DD49D00E39675 /* Router.swift in Sources */,
+				B71357852B1DDAF000E39675 /* TabbarView.swift in Sources */,
 				B71357772B1DD2D500E39675 /* A-View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -38,7 +38,9 @@ final class Router: ObservableObject {
     
     // Used to go back to the previous screen
     func navigateBack() {
-        path.removeLast()
+        if !path.isEmpty {
+            path.removeLast()
+        }
     }
     
     // Pop to the root screen in our hierarchy
