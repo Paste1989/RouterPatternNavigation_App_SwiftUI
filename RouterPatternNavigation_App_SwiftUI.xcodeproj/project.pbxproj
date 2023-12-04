@@ -14,6 +14,13 @@
 		B71357572B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357562B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUITests.swift */; };
 		B71357612B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357602B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITests.swift */; };
 		B71357632B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357622B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITestsLaunchTests.swift */; };
+		B71357732B1DD1CD00E39675 /* B-View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357722B1DD1CD00E39675 /* B-View.swift */; };
+		B71357772B1DD2D500E39675 /* A-View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357762B1DD2D500E39675 /* A-View.swift */; };
+		B71357792B1DD3CB00E39675 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357782B1DD3CB00E39675 /* RouterView.swift */; };
+		B713577C2B1DD49D00E39675 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713577B2B1DD49D00E39675 /* Router.swift */; };
+		B713577E2B1DD56800E39675 /* ViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713577D2B1DD56800E39675 /* ViewA.swift */; };
+		B71357802B1DD57500E39675 /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713577F2B1DD57500E39675 /* ViewB.swift */; };
+		B71357822B1DD57E00E39675 /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357812B1DD57E00E39675 /* ViewC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		B713575C2B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouterPatternNavigation_App_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71357602B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterPatternNavigation_App_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		B71357622B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterPatternNavigation_App_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B71357722B1DD1CD00E39675 /* B-View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "B-View.swift"; sourceTree = "<group>"; };
+		B71357762B1DD2D500E39675 /* A-View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A-View.swift"; sourceTree = "<group>"; };
+		B71357782B1DD3CB00E39675 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
+		B713577B2B1DD49D00E39675 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B713577D2B1DD56800E39675 /* ViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewA.swift; sourceTree = "<group>"; };
+		B713577F2B1DD57500E39675 /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
+		B71357812B1DD57E00E39675 /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				B71357452B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUIApp.swift */,
+				B713577A2B1DD3F300E39675 /* RouterView */,
 				B71357472B1DD13A00E39675 /* ContentView.swift */,
+				B713577D2B1DD56800E39675 /* ViewA.swift */,
+				B713577F2B1DD57500E39675 /* ViewB.swift */,
+				B71357812B1DD57E00E39675 /* ViewC.swift */,
+				B71357712B1DD1B800E39675 /* TestFolder */,
 				B71357492B1DD13B00E39675 /* Assets.xcassets */,
 				B713574B2B1DD13B00E39675 /* Preview Content */,
 			);
@@ -125,6 +144,24 @@
 				B71357622B1DD13C00E39675 /* RouterPatternNavigation_App_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = RouterPatternNavigation_App_SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		B71357712B1DD1B800E39675 /* TestFolder */ = {
+			isa = PBXGroup;
+			children = (
+				B71357762B1DD2D500E39675 /* A-View.swift */,
+				B71357722B1DD1CD00E39675 /* B-View.swift */,
+			);
+			path = TestFolder;
+			sourceTree = "<group>";
+		};
+		B713577A2B1DD3F300E39675 /* RouterView */ = {
+			isa = PBXGroup;
+			children = (
+				B713577B2B1DD49D00E39675 /* Router.swift */,
+				B71357782B1DD3CB00E39675 /* RouterView.swift */,
+			);
+			path = RouterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71357482B1DD13A00E39675 /* ContentView.swift in Sources */,
+				B71357732B1DD1CD00E39675 /* B-View.swift in Sources */,
+				B713577E2B1DD56800E39675 /* ViewA.swift in Sources */,
+				B71357802B1DD57500E39675 /* ViewB.swift in Sources */,
+				B71357822B1DD57E00E39675 /* ViewC.swift in Sources */,
+				B71357792B1DD3CB00E39675 /* RouterView.swift in Sources */,
 				B71357462B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUIApp.swift in Sources */,
+				B713577C2B1DD49D00E39675 /* Router.swift in Sources */,
+				B71357772B1DD2D500E39675 /* A-View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
