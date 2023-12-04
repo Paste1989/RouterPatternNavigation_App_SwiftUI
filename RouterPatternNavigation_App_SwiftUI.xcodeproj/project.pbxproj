@@ -22,6 +22,9 @@
 		B71357802B1DD57500E39675 /* ViewB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713577F2B1DD57500E39675 /* ViewB.swift */; };
 		B71357822B1DD57E00E39675 /* ViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357812B1DD57E00E39675 /* ViewC.swift */; };
 		B71357852B1DDAF000E39675 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71357842B1DDAF000E39675 /* TabbarView.swift */; };
+		B713578B2B1DDF7600E39675 /* ViewAViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713578A2B1DDF7600E39675 /* ViewAViewModel.swift */; };
+		B713578D2B1DDF9300E39675 /* ViewBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713578C2B1DDF9300E39675 /* ViewBViewModel.swift */; };
+		B713578F2B1DDFA600E39675 /* ViewCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B713578E2B1DDFA600E39675 /* ViewCViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		B713577F2B1DD57500E39675 /* ViewB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewB.swift; sourceTree = "<group>"; };
 		B71357812B1DD57E00E39675 /* ViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewC.swift; sourceTree = "<group>"; };
 		B71357842B1DDAF000E39675 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		B713578A2B1DDF7600E39675 /* ViewAViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAViewModel.swift; sourceTree = "<group>"; };
+		B713578C2B1DDF9300E39675 /* ViewBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBViewModel.swift; sourceTree = "<group>"; };
+		B713578E2B1DDFA600E39675 /* ViewCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,13 +116,12 @@
 		B71357442B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				B71357452B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUIApp.swift */,
-				B713577A2B1DD3F300E39675 /* RouterView */,
-				B71357832B1DDADE00E39675 /* Tabbar */,
-				B71357862B1DDCC700E39675 /* Main */,
-				B713577D2B1DD56800E39675 /* ViewA.swift */,
-				B713577F2B1DD57500E39675 /* ViewB.swift */,
-				B71357812B1DD57E00E39675 /* ViewC.swift */,
+				B71357922B1DE23500E39675 /* App */,
+				B71357902B1DE1EA00E39675 /* Models */,
+				B71357912B1DE1F800E39675 /* Services */,
+				B71357862B1DDCC700E39675 /* UI */,
+				B71357952B1DE2AA00E39675 /* Resources */,
+				B71357962B1DE2B200E39675 /* Extensions */,
 				B71357712B1DD1B800E39675 /* TestFolder */,
 				B71357492B1DD13B00E39675 /* Assets.xcassets */,
 				B713574B2B1DD13B00E39675 /* Preview Content */,
@@ -158,13 +163,13 @@
 			path = TestFolder;
 			sourceTree = "<group>";
 		};
-		B713577A2B1DD3F300E39675 /* RouterView */ = {
+		B713577A2B1DD3F300E39675 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				B713577B2B1DD49D00E39675 /* Router.swift */,
 				B71357782B1DD3CB00E39675 /* RouterView.swift */,
 			);
-			path = RouterView;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		B71357832B1DDADE00E39675 /* Tabbar */ = {
@@ -175,12 +180,96 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
-		B71357862B1DDCC700E39675 /* Main */ = {
+		B71357862B1DDCC700E39675 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				B71357472B1DD13A00E39675 /* ContentView.swift */,
+				B713577A2B1DD3F300E39675 /* Router */,
+				B71357832B1DDADE00E39675 /* Tabbar */,
+				B71357872B1DDEC000E39675 /* ViewA */,
+				B71357882B1DDED100E39675 /* ViewB */,
+				B71357892B1DDEE100E39675 /* ViewC */,
 			);
-			path = Main;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B71357872B1DDEC000E39675 /* ViewA */ = {
+			isa = PBXGroup;
+			children = (
+				B713577D2B1DD56800E39675 /* ViewA.swift */,
+				B713578A2B1DDF7600E39675 /* ViewAViewModel.swift */,
+			);
+			path = ViewA;
+			sourceTree = "<group>";
+		};
+		B71357882B1DDED100E39675 /* ViewB */ = {
+			isa = PBXGroup;
+			children = (
+				B713577F2B1DD57500E39675 /* ViewB.swift */,
+				B713578C2B1DDF9300E39675 /* ViewBViewModel.swift */,
+			);
+			path = ViewB;
+			sourceTree = "<group>";
+		};
+		B71357892B1DDEE100E39675 /* ViewC */ = {
+			isa = PBXGroup;
+			children = (
+				B71357812B1DD57E00E39675 /* ViewC.swift */,
+				B713578E2B1DDFA600E39675 /* ViewCViewModel.swift */,
+			);
+			path = ViewC;
+			sourceTree = "<group>";
+		};
+		B71357902B1DE1EA00E39675 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B71357912B1DE1F800E39675 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B71357922B1DE23500E39675 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B71357452B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUIApp.swift */,
+				B71357932B1DE28000E39675 /* Configuration */,
+				B71357942B1DE29000E39675 /* GoogleConfiguration */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B71357932B1DE28000E39675 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B71357942B1DE29000E39675 /* GoogleConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoogleConfiguration;
+			sourceTree = "<group>";
+		};
+		B71357952B1DE2AA00E39675 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B71357962B1DE2B200E39675 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +406,12 @@
 				B71357732B1DD1CD00E39675 /* B-View.swift in Sources */,
 				B713577E2B1DD56800E39675 /* ViewA.swift in Sources */,
 				B71357802B1DD57500E39675 /* ViewB.swift in Sources */,
+				B713578B2B1DDF7600E39675 /* ViewAViewModel.swift in Sources */,
+				B713578F2B1DDFA600E39675 /* ViewCViewModel.swift in Sources */,
 				B71357822B1DD57E00E39675 /* ViewC.swift in Sources */,
 				B71357792B1DD3CB00E39675 /* RouterView.swift in Sources */,
 				B71357462B1DD13A00E39675 /* RouterPatternNavigation_App_SwiftUIApp.swift in Sources */,
+				B713578D2B1DDF9300E39675 /* ViewBViewModel.swift in Sources */,
 				B713577C2B1DD49D00E39675 /* Router.swift in Sources */,
 				B71357852B1DDAF000E39675 /* TabbarView.swift in Sources */,
 				B71357772B1DD2D500E39675 /* A-View.swift in Sources */,

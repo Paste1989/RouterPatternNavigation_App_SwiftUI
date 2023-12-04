@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ViewB: View {
     @EnvironmentObject var router: Router
+    @ObservedObject var viewModel = ViewBVieModel()
     let description: String
     
     var body: some View {
@@ -23,7 +24,7 @@ struct ViewB: View {
                 router.navigateTo(.viewC)
             }
         }
-        .navigationTitle("**View B**")
+        .navigationTitle("View B")
     }
 }
 

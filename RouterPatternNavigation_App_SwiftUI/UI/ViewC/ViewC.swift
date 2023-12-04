@@ -1,5 +1,5 @@
 //
-//  ViewA.swift
+//  ViewC.swift
 //  RouterPatternNavigation_App_SwiftUI
 //
 //  Created by Saša Brezovac on 04.12.2023..
@@ -7,26 +7,28 @@
 
 import SwiftUI
 
-struct ViewA: View {
+struct ViewC: View {
     @EnvironmentObject var router: Router
+    @ObservedObject var viewModel = ViewCVieModel()
     
     var body: some View {
         VStack() {
             Button("Go to View **B**") {
-                router.navigateTo(.viewB("Got here from **View A**"))
+                router.navigateTo(.viewB("Got here from C"))
             }
             .padding()
             
-            Button("Go to View **C**") {
-                router.navigateTo(.viewC)
+            
+            Button("Go back") {
+               router.navigateBack()
             }
         }
-        .navigationTitle("**View A**")
+        .navigationTitle("View C")
     }
 }
 
-struct ViewA_Previews: PreviewProvider {
+struct ViewC_Previews: PreviewProvider {
     static var previews: some View {
-        ViewA()
+        ViewC()
     }
 }
