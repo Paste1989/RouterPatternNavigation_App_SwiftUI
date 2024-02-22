@@ -24,8 +24,14 @@ struct RouterView<Content: View>: View {
         NavigationStack(path: $router.path) {
             content
                 .navigationDestination(for: Router.Route.self) { route in
-                    router.view(for: route)
+                    router.view(for: route, type: .push)
                 }
+        }
+        .sheet(item: $router.presentingSheet) { route in
+            router.view(for: route, type: .sheet)
+        }
+        .fullScreenCover(item: $router.presentingFullScreenCover) { route in
+            router.view(for: route, type: .fullScreenCover)
         }
         .environmentObject(router)
     }

@@ -16,12 +16,12 @@ struct ViewB: View {
         VStack() {
             Text(description)
             Button("Go to View **A**") {
-                router.navigateTo(.viewA)
+                router.push(.viewA)
             }
             .padding()
             
             Button("Go to View **C**") {
-                router.navigateTo(.viewC)
+                router.push(.viewC)
             }
         }
         .navigationTitle("View B")

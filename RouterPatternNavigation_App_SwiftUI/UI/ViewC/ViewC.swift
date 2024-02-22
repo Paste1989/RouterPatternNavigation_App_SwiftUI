@@ -14,13 +14,14 @@ struct ViewC: View {
     var body: some View {
         VStack() {
             Button("Go to View **B**") {
-                router.navigateTo(.viewB("Got here from C"))
+                router.push(.viewB("Got here from C"))
             }
             .padding()
             
-            
-            Button("Go back") {
-               router.navigateBack()
+            if router.presentingSheet != nil || router.presentingFullScreenCover != nil {
+                Button("Dismiss") {
+                    router.dismiss()
+                }
             }
         }
         .navigationTitle("View C")
